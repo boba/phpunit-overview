@@ -31,21 +31,21 @@ virtualization, you should be able to run from anywhere.
 
 **UNIX**
 ```
-$ docker build -t phpunit_overview/phpunit .
+$ docker build -t phpunit-overview/phpunit .
 ...
-$ docker run -v $(pwd):/app --rm phpunit_overview/phpunit --version
+$ docker run -v $(pwd):/app --rm phpunit-overview/phpunit --version
 PHPUnit 6.5.5 by Sebastian Bergmann, Julien Breux (Docker) and contributors.
 
-$ alias phpunit="docker run -v \$(pwd):/app --rm phpunit_overview/phpunit"
+$ alias phpunit="docker run -v \$(pwd):/app --rm phpunit-overview/phpunit"
 $ phpunit --version
 PHPUnit 6.5.5 by Sebastian Bergmann, Julien Breux (Docker) and contributors.
 ```
 
 **Windows**
 ```
-$ docker build -t phpunit_overview/phpunit .
+$ docker build -t phpunit-overview/phpunit .
 ...
-$ docker run -v %cd%:/app --rm phpunit_overview/phpunit --version
+$ docker run -v %cd%:/app --rm phpunit-overview/phpunit --version
 PHPUnit 6.5.5 by Sebastian Bergmann, Julien Breux (Docker) and contributors.
 
 $ phpunit.bat --version

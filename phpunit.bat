@@ -1,2 +1,2 @@
 @echo off
-docker run -v %cd%:/app --rm phpunit_overview/phpunit --colors=always %*
+docker run -v %cd%:/app --rm phpunit-overview/phpunit --colors=always %*

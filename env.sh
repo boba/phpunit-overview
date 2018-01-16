@@ -2,4 +2,4 @@
 eval $(docker-machine env default)
 
 # Use local, custom phpunit/phpunit w/ dbunit additons
-alias phpunit="docker run -v \$(pwd):/app --rm phpunit_overview/phpunit --colors=always"
+alias phpunit="docker run -v \$(pwd):/app --rm phpunit-overview/phpunit --colors=always"
