@@ -2,5 +2,5 @@
 
 include_once('AutoLoader.php');
 
-AutoLoader::registerDirectory('./lib');
+AutoLoader::registerDirectory('./src');
 AutoLoader::registerDirectory('./tests/lib');
