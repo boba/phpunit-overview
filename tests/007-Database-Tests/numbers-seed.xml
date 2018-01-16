@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<dataset>
+    <numbers id="1" vala="1" valb="0" valc=""/>
+    <numbers id="2" vala="1" valb="1" valc=""/>
+</dataset>

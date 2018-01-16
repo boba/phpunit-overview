@@ -1,0 +1,11 @@
+{
+  "config": {
+    "secure-http": false
+  },
+  "require-dev": {
+    "phpunit/php-code-coverage": "^5.3",
+    "phpunit/phpunit": "^6.5",
+    "phpunit/php-invoker": "*",
+    "phpunit/dbunit": "*"
+  }
+}
