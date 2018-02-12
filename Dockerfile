@@ -48,7 +48,7 @@ RUN apk --no-cache add \
     && composer require "phpunit/php-code-coverage:^5.3" --prefer-source --no-interaction \
     && composer require "phpunit/phpunit:^6.5" --prefer-source --no-interaction \
     && composer require "phpunit/php-invoker" --prefer-source --no-interaction \
-    && composer require --dev "phpunit/dbunit" --prefer-source --no-interaction \ 
+    && composer require --dev "phpunit/dbunit:3.*" --prefer-source --no-interaction \
     && ln -s /tmp/vendor/bin/phpunit /usr/local/bin/phpunit \
     && sed -i 's/\;z/z/g' /etc/php7/conf.d/xdebug.ini \
     && php -m | grep -i xdebug
