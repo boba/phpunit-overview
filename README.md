@@ -57,7 +57,7 @@ PHPUnit 6.5.5 by Sebastian Bergmann, Julien Breux (Docker) and contributors.
 ## Running PHPUnit
 
 ```
-$ phpunit --bootstrap lib/Calculator.php tests/002-Basic-Tests
+$ phpunit tests/002-Basic-Tests
 $ phpunit -c tests/phpunit.xml tests
 ```
 
@@ -81,21 +81,10 @@ Tests: 1, Assertions: 0, Incomplete: 1.
 $
 ```
 
-### Basic Test with Bootstrap
+### Basic Tests using phpunit.xml and Autoload
 
 ```
-$ phpunit --bootstrap lib/Calculator.php tests/002-Basic-Tests/BasicCalulatorTest.php
-PHPUnit 6.5.5 by Sebastian Bergmann, Julien Breux (Docker) and contributors.
-.                                                                   1 / 1 (100%)
-Time: 701 ms, Memory: 2.00MB
-OK (1 test, 2 assertions)
-$
-```
-
-### Basic Test with Autoload
-
-```
-$ phpunit -c tests/phpunit.xml tests/003-More-Tests/BetterCalculatorTest.php
+$ phpunit -c phpunit.xml tests/003-More-Tests/BetterCalculatorTest.php
 PHPUnit 6.5.5 by Sebastian Bergmann, Julien Breux (Docker) and contributors.
 Runtime:       PHP 7.1.5 with Xdebug 2.5.3
 Configuration: /app/tests/phpunit.xml
